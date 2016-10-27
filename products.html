@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baguio City Products</title>
+    <link type="text/css" rel="stylesheet" href="baguio.css"/>
+     <link type="text/css" rel="stylesheet" href="baguio.css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class="jumbo">
+  <h1>Baguio City</h1>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="tab"><a href=""></a></li>
+      <li><a href="Baguio.html">Home</a></li>
+          <li class="active"><a href="products.html">Products</a></li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Panagbenga Festival <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+      <li><a href="#"></a>2016</li>
+      <li><a href="#"></a>2015</li>
+      <li><a href="#"></a>2014</li>
+      <li><a href="#"></a>2013</li>
+      <li><a href="#"></a>2012</li>
+      <li><a href="#"></a>2011</li>
+      <li><a href="#"></a>2010</li>
+        </ul></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="w3-container">
+  <h2>This are some local  product's that you can find</h2>
+  <p></p>
+</div>
+<div class="container">
+ <br>
+ <br>
+ <br>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 3</div>
+  <img  src="https://www.organicfacts.net/wp-content/uploads/2013/06/Strawberry1.jpg" style="width:100%">
+  <div class="text">Strawberry</div>
+  <div class="description">
+  
+  
+  <p>Strawberries one of the healthiest fruits you can eat. The ancient Romans believed in their medicinal qualities, and even nowadays strawberries are believed to reduce the risk of heart disease and certain cancers. They also contain high levels of nitrate, which is believed to increase blood and oxygen flow to the muscles.Baguio strawberry have two supplier the first one is the strawberry farm which is  located at La Trinidad Benguet it is also a famous tourist attration .Second is Sitio Lapresa which is located in Sitio Pungayan in municipality of Tube</p>
+  </div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://www.aleetaspeanutbrittle.com/uploads/2/8/0/7/28071275/2850392_orig.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://baguiodirectory.net/wp-content/uploads/2013/09/baguio-city-pasalubong.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<a class="w3-btn-floating" style="position:absolute;top:30%;left:13%" onclick="plusDivs(-1)">❮</a>
+  <a class="w3-btn-floating" style="position:absolute;top:30%;right:13%" onclick="plusDivs(1)">❯</a>
+</div>
+<br>
+<br>
+ <br>
+  <br>
+ <br>
+ <br>
+ <br>
+<hr>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow" src="https://www.organicfacts.net/wp-content/uploads/2013/06/Strawberry1.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow" src="http://www.aleetaspeanutbrittle.com/uploads/2/8/0/7/28071275/2850392_orig.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-border w3-hover-shadow" src="http://baguiodirectory.net/wp-content/uploads/2013/09/baguio-city-pasalubong.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-border-red";
+  setTimeout(showSlides, 2000);
+}
+
+</script>
+</div>
+</body>
+</html>

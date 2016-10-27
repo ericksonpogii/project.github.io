@@ -1,0 +1,26 @@
+h1{
+	text-align: center;
+}
+.container{
+	background-color:#969090;
+}
+.container p{
+	color: white;
+}
+.navbar{
+	margin-right: 13%;
+	margin-left: 13%;
+}
+body{
+background-image: url("img/208628.jpg");
+background-color: #333;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+ img{
+    margin: auto;
+    width: 50%;
+    border: 3px solid orange;
+    padding: 10px;
+    margin-left: 25%;
+}
